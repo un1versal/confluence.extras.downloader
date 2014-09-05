@@ -1,4 +1,3 @@
-#
 # BackgroundPackInstaller Script by Phil65  (inspired by ThemeInstaller script by Dan Dar3)
 # Installs background packs from local or remote zip files
 
@@ -27,7 +26,7 @@ def main() :
     global INSTALL_PATH
     global download_mode
     modeselect= []
-    if xbmc.getSkinDir() != "skin.aeon.nox" :
+    if xbmc.getSkinDir() != "skin.confluence" :
         xbmcgui.Dialog().ok( __addonid__, "Skin not supported")        
         return
     modeselect.append( __language__(32008) )
@@ -52,7 +51,7 @@ def main() :
         DOWNLOAD_BUTTON =  __language__(32001)
         # Install local theme...
     elif download_mode == 1 :
-        BACKGROUNDPACKS_REPO = "http://aeon-nox-background-packs.googlecode.com/svn/trunk/themes/"
+        BACKGROUNDPACKS_REPO = "https://github.com/uNiversaI/revamped.themes/"
         INSTALL_PATH  = os.path.join( SKIN_PATH, "media" )
         ZIP_PATH = os.path.join( ADDON_DATA_PATH, "themes" )
         DOWNLOAD_BUTTON =  __language__(32011)

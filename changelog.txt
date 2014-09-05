@@ -1,0 +1,6 @@
+Confluence extras donwloader Changelog
+
+1.0.0
+- New Icon
+- Modify addon.xml to reflect skin it is suppose to service.
+- Modify Default.py to point to skin.confluence

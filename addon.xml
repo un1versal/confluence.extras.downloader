@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.nox.extras.downloader" name="Nox Extras Downloader" version="0.0.3" provider-name="phil65">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-        <import addon="xbmc.addon"                  version="12.0.0"/>
-	</requires>
-    <extension point="xbmc.python.script"           library="default.py">
+<addon 
+    id="confluence.extras.downloader"
+    name="Confluence Extras Downloader"
+    version="1.0.0" 
+    provider-name="uNiversal">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension 
+	point="xbmc.python.script"
+	library="default.py">
         <provides>executable</provides>
     </extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Nox Extra Media Downloader</summary>
-		<description>Downloads Extra Media from a Aeon Nox 4.0</description>
-		<disclaimer>Use at your own risk.</disclaimer>
+    <extension point="xbmc.addon.metadata">
+        <summary>Confluence Extras Downloader</summary>
+        <description>Downloads skin themes, weather fanart pack and backgrounds for Confluence skin.</description>
+        <disclaimer>This is a modified version of phil65 script.nox.extras.downloader. Use at your own risk.</disclaimer>
         <language></language>
         <platform>all</platform>
-	</extension>
+        <source>https://github.com/uNiversaI/confluence.extras.downloader</source>
+    </extension>
 </addon>
