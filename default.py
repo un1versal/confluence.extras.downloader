@@ -16,7 +16,7 @@ __addonversion__ = __addon__.getAddonInfo('version')
 __cwd__          = __addon__.getAddonInfo('path').decode("utf-8")
 __language__     = __addon__.getLocalizedString
 
-SKIN_PATH = os.path.join( xbmc.translatePath("special://home/addons"), xbmc.getSkinDir() )
+SKIN_PATH = os.path.join( xbmc.translatePath("special://skin/media/"), xbmc.getSkinDir() )
 ADDON_DATA_PATH = os.path.join( xbmc.translatePath("special://profile/addon_data/%s" % __addonid__ ).decode("utf-8") )
 
 def main() :
